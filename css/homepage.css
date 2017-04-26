@@ -1,0 +1,31 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arimo', sans-serif;
+}
+
+.bg {
+    /* The image used */
+    background: url(../img/homepage_bg.png);
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0;
+}
+
+p {
+    margin-top: 0; 
+    padding-top: 40%;
+    padding-left: 60%;
+    font-size: 40px;
+}
+
+img {
+    margin-right: 2px;
+    margin-left: 2px;
+}
