@@ -1,0 +1,30 @@
+body {
+    overflow-x: hidden;
+}
+
+#record-icon {
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.main-content {
+    margin-top: 5%;
+    margin-left: 15%;  
+}
+
+.left-col {
+    padding-right: 10%;
+}
+
+p {
+    font-size: 30px;
+}
+
+img.standalone {
+    margin-top: 10%;
+}
+
+.red-bold {
+    color: red;
+    font-weight: bold;
+}

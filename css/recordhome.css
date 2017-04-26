@@ -1,0 +1,52 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arimo', sans-serif;
+    overflow-x: hidden; 
+}
+
+.bg {
+    /* The image used */
+    background: url(../img/record_memory_background.png);
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0;
+}
+
+.main-content {
+    margin-left: 10%;
+    padding-top: 5%;
+    width: 95%;
+}
+
+#record-icon {
+    width: 50%;
+    margin-bottom: 10%;
+}
+
+p {
+    font-size: 2em;
+}
+
+p.blurb {
+    color: red;
+    font-weight: bold;
+}
+
+.form-control {
+    width: 25%;
+    padding: 5%;
+    font-size: 2em;
+    margin-top: 5%;     
+}
+
+#keypad {
+    margin-top: 65%; 
+
+}
