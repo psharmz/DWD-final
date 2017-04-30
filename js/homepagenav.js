@@ -9,7 +9,7 @@
 
 function uniKeyCode(event) {
     var key = event.keyCode;
-    if (key == 57) {
+    if (key == 51) {
         window.location = 'recordrecall.html';
     }
 }

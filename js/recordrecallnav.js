@@ -1,11 +1,12 @@
 function uniKeyCode(event) {
     var key = event.keyCode;
-    //recall a memory 1 is 49 i char
-    if (key == 49) {
+    // console.log("the key binding is " + key);
+    //recall a memory
+    if (key == 55) {
         window.location = 'recallhome.html';
     }
     //record a memory
-    if (key == 55) {
+    if (key == 49) {
         window.location = 'recordhome.html';
     }
-}
+}71

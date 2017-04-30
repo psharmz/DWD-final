@@ -117,12 +117,10 @@ if ( navigator.mediaDevices.getUserMedia ) {
       
         if ( navigator.vibrate ) navigator.vibrate( [ 200, 100, 200 ] );
 
-        var now = Math.ceil( new Date().getTime() / 1000 );
+        // var now = Math.ceil( new Date().getTime() / 1000 );
 
-        var t = parseTime( now - time );
+        // var t = parseTime( now - time );
 
-        msg_box.innerHTML = '<a href="#" onclick="play(); return false;" class="txt_btn">' + lang.play + ' (' + t + 's)</a><br>' +
-                            '<a href="#" onclick="save(); return false;" class="txt_btn">' + lang.download + '</a>'
     }
 
     //play back the recording
@@ -130,15 +128,49 @@ if ( navigator.mediaDevices.getUserMedia ) {
         audio.play();
     }
 
+    //display date and time
+    function getDateTime() {
+      var day = new Date;
+      var newd = day.getDay();
+      var newm = day.getUTCMonth();
+      var d = day.getUTCDate();
+      var y = day.getUTCFullYear();
+
+      week = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+      month = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+      //12hr time format
+      var date = new Date;
+      var hours = date.getHours() > 12 ? date.getHours() - 12 : date.getHours();
+      var am_pm = date.getHours() >= 12 ? "PM" : "AM";
+      hours = hours < 10 ? "0" + hours : hours;
+      var minutes = date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes();
+      var seconds = date.getSeconds() < 10 ? "0" + date.getSeconds() : date.getSeconds();
+      time = hours + ":" + minutes + ":" + seconds + " " + am_pm;
+
+      //save as string
+      return week[newd] + ', ' + month[newm] + ' ' + d + ', ' + y + time; 
+    }
+
+
     //save the recording
     function save() {
-        var a = document.createElement( 'a' );
-        a.download = 'record.ogg';
-        a.href = audioSrc;
-        document.body.appendChild( a );
-        a.click();
 
-        document.body.removeChild( a );
+                // blob = new Blob( chunks, type );
+                // audioSrc = window.URL.createObjectURL( blob );
+
+                // audio.src = audioSrc;
+
+                // chunks = [];
+
+        var clipName = getDateTime(); 
+        console.log(clipName)
+        a.download = 'record.ogg';
+        // a.href = audioSrc;
+        // document.body.appendChild( a );
+        // a.click();
+
+        // document.body.removeChild( a );
     }
 
 } else {

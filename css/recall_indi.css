@@ -1,0 +1,23 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arimo', sans-serif;
+    overflow: hidden; 
+}
+
+img {
+    max-height: 75vh;
+}
+
+.img-wrapper {
+    background-color: #d72b27;
+    max-height: 72.4vh;
+}
+
+.row {
+    padding: 3% 5% 5% 10%;
+}
+
+p {
+    font-size: 32px;
+}
