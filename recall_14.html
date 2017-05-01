@@ -11,11 +11,49 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/recall_14.css">
+    <link rel="stylesheet" type="text/css" href="css/recordhome.css">
 
-    <script src="js/recall_14.js"></script>
+
 
 <body onkeydown="uniKeyCode(event)">
-<p>This should be 2017 stories list page</p>
+    <div class="row"> 
+          <div class="col-xs-6 main-content">
+            <img src="img/listen_instructions.png" class="listen_instruct img-responsive" alt="instructions">
+
+            <!-- list of voice memos --> 
+            <ul>
+                <li>
+                    <p id="entry1" class="entry selected-entry">
+                        <img src="img/speaker-icon.png" class="icon" alt="icon" align="middle">
+                        <audio id="audio1">
+                            <source src="audio/1_1335.mp3" type="audio/ogg" />
+                        </audio>
+                    january 10th 8:01 am </p>
+                </li>
+                <li>
+                    <p id="entry2" class="entry"> 
+                        <img src="img/speaker-icon.png" class="icon" alt="icon" align="middle">
+                        <audio id="audio2">
+                            <source src="audio/1_1335.mp3" type="audio/ogg" />
+                        </audio>
+                    april 8th 7:30 pm </p>
+                </li>
+                <li></li>
+                <li></li>
+            </ul>
+
+          </div>
+          <div class="col-xs-6 main-content">
+            <p class="prompt" > Share your rambles, thoughts, or story for others to stumble upon in this booth! </p>
+            <img src="img/record_instruct.png" class="record_instruct img-responsive" alt="instructions">
+            <div class="state-viz">
+                <p> Your memory is now part of this telephone booth! Thanks!</p> 
+            </div>
+            <img src="img/fwdback.png" class="record_instruct img-responsive" alt="instructions">
+
+          </div>
+    </div>
+
+    <script src="/js/recordhome.js"></script>                   
 </body>
 </html>
