@@ -27,7 +27,12 @@ ul, li {
 }
 
 .main-content {
-    padding: 15% 10% 10% 10%;
+    padding: 15% 5% 10% 5%;
+}
+
+.left-col {
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .entry {
@@ -35,8 +40,8 @@ ul, li {
     margin-top: 5%;
 }
 
-.prompt {
-    font-size: 25px;
+p.prompt {
+    font-size: 20px;
 }
 
 
@@ -45,9 +50,10 @@ ul, li {
     margin: 0% 5% 0% 0%;
 }
 
-.state-viz {
-    font-size: 30px;
+#state-viz {
+    font-size: 25px;
     color: red;
+    visibility: hidden;
 }
 
 .selected-entry {

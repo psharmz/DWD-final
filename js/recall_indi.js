@@ -1,5 +1,7 @@
-var next = 190; //f
-var back = 48; //g
+
+var next = 110; // UPDATED
+var back = 48; 
+
 function uniKeyCode(event) {
     var key = event.keyCode;
     //if (key == next) {

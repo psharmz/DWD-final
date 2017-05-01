@@ -6,7 +6,7 @@ function uniKeyCode(event) {
         window.location = 'recallhome.html';
     }
     //record a memory
-    if (key == 49) {
-        window.location = 'recordhome.html';
+    if (key == 57) {
+        window.location = 'recall_14.html';
     }
 }71

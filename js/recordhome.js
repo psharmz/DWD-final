@@ -1,7 +1,11 @@
 var position = 1;
 var maxposition = 2;
-var navigate = 87; //w FOR NOW change this later
+var navigate = 55; 
 var play = 65; //a FOR NOW change this later
+
+var next = 110; // UPDATED
+
+var back = 48; 
 
 var mem_time = ''; 
 
@@ -73,7 +77,7 @@ if ( navigator.mediaDevices.getUserMedia ) {
         }
 
         //start and stop recording on key press 1 
-        if (key == 49) {
+        if (key == 57) {
             if ( recording_status == 'inactive' ) {
                 record();
                 mem_time = getDateTime();
@@ -81,13 +85,21 @@ if ( navigator.mediaDevices.getUserMedia ) {
         }
 
         //replay recording on key press 3
-        if (key == 51) {
+        if (key == 54) {
             replay();     
         }
 
         //submit recording, add it to the page on press 9 
-        if (key == 57) {
+        if (key == 51) {
             save();
+        }
+
+        if (key == next){
+            window.location = 'homepage.html';
+        }
+
+        if (key == back){
+            window.location = 'recordrecall.html';
         }   
 
     }
@@ -155,6 +167,8 @@ if ( navigator.mediaDevices.getUserMedia ) {
 
     //save the recording
     function save() {
+
+        document.getElementById('state-viz').style.visibility = "visible"; 
 
         maxposition++; 
 

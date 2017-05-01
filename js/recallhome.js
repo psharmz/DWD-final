@@ -1,11 +1,12 @@
 var position = 1;
-var up = 87; //w
-var down = 83; //a
-var left = 65; //s
-var right = 68; //d
-var next = 190; // UPDATED
+var up = 56; //2
+var down = 50; //8
+var left = 52; //4
+var right = 54; //6
 
+var next = 110; // UPDATED
 
+var back = 48; 
 
 //1-103 2-104 3-105 4-100 5-101 6-102 7-97 8-98 9-99  *-96  #-110
 
@@ -97,5 +98,9 @@ function uniKeyCode(event) {
 
     if (key == next){
         window.location = 'recall_'+position.toString()+'.html';
+    }
+
+    if (key == back){
+        window.location = 'recordrecall.html';
     }
 }
